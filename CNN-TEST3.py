@@ -16,9 +16,9 @@ import cv2
 #%%
 
 
-path1 = 'images\input_test'
-path2 = 'images\input_test_resized'  
-path3 = 'images\compare'
+path1 = 'images\input_test3'
+path2 = 'images\input_test_resized3'  
+path3 = 'images\compare3'
 listing = os.listdir(path1)
 listing_comp = os.listdir(path3) 
 
@@ -43,11 +43,11 @@ if compHist > 0.75:
     
     imlist = os.listdir(path2)
     
-    im1 = array(Image.open('images\input_test_resized' + '\\'+ imlist[0])) # open one image to get size
+    im1 = array(Image.open('images\input_test_resized3' + '\\'+ imlist[0])) # open one image to get size
     m,n = im1.shape[0:2] 
     imnbr = len(imlist)
     num_samples=size(listing)
-    immatrix = array([array(Image.open('images\input_test_resized' + '\\' + im2)).flatten()
+    immatrix = array([array(Image.open('images\input_test_resized3' + '\\' + im2)).flatten()
                   for im2 in imlist],'f')                
     label=np.ones((num_samples,),dtype = int)
     data,Label = shuffle(immatrix,label, random_state=2)
