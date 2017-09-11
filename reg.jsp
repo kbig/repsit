@@ -218,7 +218,7 @@ String hospital = "";
                 <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1"><%=result%>
                 </h1>
                 <br>
-                <p class="mbr-text pb-3 mbr-fonts-style display-5">하이하이<%=hospital%><%=warning%><br></p>
+                <p class="mbr-text pb-3 mbr-fonts-style display-5"><%=hospital%><%=warning%><br></p>
         </div>
     </div>
     
@@ -315,9 +315,6 @@ String hospital = "";
 </section>
 
 
-<%=result%> <br>
-<%=hospital%> <br>
-<%=warning%> <br>
 
 </body>
 
